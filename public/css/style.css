@@ -1,0 +1,28 @@
+body{
+  font-family: 'Roboto Mono', monospace;
+  background: #D6FFB7;
+}
+
+.container{
+  border: 5px solid #FFF689;
+  background-color: #7AE7C7;
+  padding: 5em;
+  margin: 1.5em;
+  border-radius: 3%;
+}
+
+.form-group{
+  width: 100%;
+  padding: 1em;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.icon{
+  padding: 14px;
+  color: black;
+  min-width: 50px;
+  text-align: center;
+  font-size: 2em;
+}
