@@ -41,7 +41,7 @@ app.post('/send', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'truckychef@gmail.com',
+      user: 'johndoe@gmail.com',
       pass: 'password' 
     }
   });
@@ -49,14 +49,14 @@ app.post('/send', (req, res) => {
   // tls:{
   //   rejectUnauthorized:false
   // }
-  // setup email data with unicode symbols
+
   
+  // Set up de los datos del correo
   let mailOptions = {
-      from: '"Trucky Chef" <truckychef@gmail.com>', // sender address
-      to: 'ricardo.menjivar2022@adoc.superate.org.sv', // list of receivers
-      subject: 'Orden de Comida', // Subject line
-      text: 'Hello world!', // plain text body
-      html: output // html body
+    from: '"Fabio Menjívar" <correoelectronico@outlook.com>', // Correo del emisor
+    to: 'anotheremail@outlook.com', // Lista de receptores
+    subject: 'Whats popping?!', // Asunto del correo
+    html: output // cuerpo html.
   };
 
   // send mail with defined transport object
